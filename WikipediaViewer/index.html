@@ -22,45 +22,30 @@
 
 
 <body>
-  <div id = "head">
-    <h1 id = "title"> Twitch Channel Viewer </h1>
+
+  <div class = "title">
+    <h1> Wikipedia Viewer </h1>
+ 
   </div>
   
-  <div class = "main-body">
-    
-    <table style="width: 100%">
-  <tr>
-    <th> Icon </th>
-    <th>Channel name</th>
-    <th>Status</th> 
-    <th>Bio</th>
-  </tr>
-      
-      
-  <tr id = "ch0">
-    <td> <img src = "https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-profile_image-d9514f2df0962329-300x300.png"> </img> </td>
-    <td id = "ch0-name"> <a href = "https://www.twitch.tv/freecodecamp"> FreeCodeCamp </a></td>
-    <td id = "ch0-status" style = "color: blue">Offline</td> 
-    <td id = "ch0-bio">N/A</td>
-  </tr>
   
   
-  <tr id = "ch1">
-    <td> <img src = "https://static-cdn.jtvnw.net/jtv_user_pictures/esl_sc2-profile_image-d6db9488cec97125-300x300.jpeg"></img> </td>
-    <td id = "cj1-name"> <a href = "https://www.twitch.tv/esl_sc2">ESLSc2</a></td>
-    <td id = "ch1-status" style = "color: blue">Offline</td> 
-    <td id = "ch1-bio">N/A</td>
-  </tr>
+  <div class = "main">
 
-
-  <tr id = "ch2">
-    <td><img src = "https://static-cdn.jtvnw.net/jtv_user_pictures/robotcaleb-profile_image-9422645f2f0f093c-300x300.png"></img>  </td>
-    <td id = "ch2-name"> <a href = "https://www.twitch.tv/robotcaleb">RobotCaleb </a> </td>
-    <td id = "ch2-status" style = "color: blue"> Offline </td>
-    <td id = "ch2-bio"> N/A </td>
-      </tr>
-</table>
-    
-  </div>
   
+ 
+    <input id = "searchbox" type="text" name="search" placeholder="Search..">
+    
+    <button id = "mybutton" class = "btn btn-primary">Submit</button>
+        
+    <h6> Click <a href = "https://en.wikipedia.org/wiki/Special:Random" target = "blank"> here </a> for a random page </h6>
+    
+    
+    <div id = "results">
+      <h6 id = "resultstext"> 
+      </h6>
+      
+    </div>
+
+      </div>
 </body>
