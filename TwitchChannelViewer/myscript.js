@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
   //this is the API key -- known as the USERID key in twitch
   var key = "l41u4yxpbq18z1sutqd9k4ct7oai0m";
@@ -29,11 +27,22 @@ $(document).ready(function(){
       type: "GET",
       dataType: "json",
       success: function(data){
+      
       console.log(data.stream);
       console.log(i);
+      
       if(data.stream != null){
 
-        $("#ch"+i+"-status").html("Online");
+        $("#ch"+i+"-status").html("<strong style = \"color: red\"> Online </strong>");
+        $.ajax({
+          url: streambiourls[i],
+          type: "GET",
+          dataType: "json",
+          success: function(data){
+            $("#ch1-bio").html(data.bio);
+          }
+          
+        })
         
       }
     }
