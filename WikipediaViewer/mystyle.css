@@ -1,29 +1,15 @@
-#head{
-  color: black;
-}
-
-
-#title{
-  width: 50%;
-  border: 3px solid hsl(150, 100%, 80%);
-  border-radius: 20px;
-  padding: 10px;
+.title{
   text-align: center;
-  margin: auto;
 }
-
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+.main{
+  text-align: center;
 }
-.main-body{
-  width: 50%;
-  margin: auto;
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
-img{
-  width: 50px;
-}
-body{
-  background-image: url(  "https://wallpapercave.com/wp/P8iErUQ.jpg");
+input[type=text]:focus {
+    width: 15%;
+  
 }
