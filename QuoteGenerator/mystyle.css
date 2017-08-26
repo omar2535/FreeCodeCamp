@@ -1,0 +1,13 @@
+.title{
+ text-align: center; 
+  color: rgb(50,0,0);
+  background: rgb(100,50,100);
+}
+
+.title h1{
+  color: white;
+}
+
+.nowrap{
+  white-space: nowrap;
+}
